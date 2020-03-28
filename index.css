@@ -1,0 +1,230 @@
+body,*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:rgba(175, 167, 167, 0.582);
+    overflow:scroll;
+}
+#header{
+    width:100%;
+}
+#top_nav{
+    display:flex;
+    width:100%;
+    height:70px;
+    background-color:rgb(56,55,55);
+    box-shadow:5px 5px 5px black;
+    align-items:center;
+}
+#top_nav a{
+    text-decoration:none;
+    color:white;
+}
+#site_name{
+    margin-left:25px;
+}
+#search{
+    margin-left:100px;
+    border-radius:10px;
+    height:25px;
+}
+#search_bar{
+    border:none;
+    height:100%;
+    width:300px;
+}
+#search_btn{
+    height:100%;
+    width:30px;
+    border:none;
+
+}
+#track_order{
+    position:relative;
+    left:220px;
+    height:100%;
+    width:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+#track_order:hover{
+    background-color:black;
+}
+#cart{
+    position:relative;
+    left:270px;
+    height:100%;
+    width:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    top:0px;
+}
+#cart:hover{
+    background-color:black;
+}
+.fa-shopping-cart{
+    margin-right:5px;
+}
+#login_drop{
+    position:relative;
+    display:inline-block;
+    left:300px;
+    height: 100%;
+    width:100px;
+}
+#login{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:23px;
+    left:25px;
+}
+#logout_div{
+    height:40px;
+    padding-left:70px;
+    padding-top:10px;
+    color:white;
+}
+#logout_div:hover{
+    background-color:#ddd;
+}
+#logout_btn{
+    background-color:black;
+    color:white; 
+    border:none;
+    margin-right:10px;
+}
+#logout_div:hover #logout_btn{
+    background-color:#ddd;
+}
+#login_content{
+    display:none;
+    position:absolute;
+    left:-90px;
+    top:70px;
+    width:200px;
+    background-color:black;
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+#login_content p{
+    text-align:center;
+}
+#login_content a{
+    color: white;;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+}
+#login_content a:hover{
+    background-color:#ddd;
+}
+#login_drop:hover #login_content{
+    display:block;
+}
+#login_drop:hover{
+    background-color:black;
+}
+#side_nav_div{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    margin-left:20px;
+    background-color:white;
+    box-shadow:3px 3px 3px black;
+    height:360px;
+    width:300px;
+    margin-top:20px;
+}
+#top_categories{
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:10px 0 10px 0;
+}
+#side_nav{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    align-items:center;
+}
+#side_nav a{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    padding:15px;
+    color:white;
+    font-size:17px;
+    background-color:rgb(131, 120, 120);
+}
+#side_nav .fa{
+    margin-right:5px;
+    color: black;
+}
+#side_nav a:hover{
+    background-color:rgba(219, 202, 202, 0.808);
+}
+#slide_show{
+    position:relative;
+    top:-360px;
+    left:340px;
+    width:900px;
+    height:425px;
+}
+.caption{
+    color: black;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 150px;
+    right:250px;
+    width: 100%;
+    text-align: center;
+}
+.c1{
+    color:rgba(48, 41, 41, 0.705);
+    font-weight:bold;
+    font-size:30px;
+    bottom:250px;
+    left:250px;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.slides img{
+    width:100%;
+    height:400px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}

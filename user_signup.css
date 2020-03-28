@@ -1,0 +1,152 @@
+body,*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#header{
+    width:100%;
+}
+#top_nav{
+    display:flex;
+    width:100%;
+    height:70px;
+    background-color:rgb(56,55,55);
+    box-shadow:5px 5px 5px black;
+    align-items:center;
+}
+#top_nav a{
+    text-decoration:none;
+    color:white;
+}
+#site_name{
+    margin-left:25px;
+}
+#search{
+    margin-left:100px;
+    border-radius:10px;
+    height:25px;
+}
+#search_bar{
+    border:none;
+    height:100%;
+    width:300px;
+}
+#search_btn{
+    height:100%;
+    width:30px;
+    border:none;
+}
+#cart{
+    margin-left:410px;
+    height:100%;
+    width:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    top:-10px;
+}
+#cart:hover{
+    background-color:black;
+}
+.fa-shopping-cart{
+    margin-right:5px;
+}
+#login_drop{
+    position:relative;
+    display:inline-block;
+    margin-left:10px;
+    height: 100%;
+    width:100px;
+}
+#login{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:23px;
+    left:25px;
+}
+#login_content{
+    display:none;
+    position:absolute;
+    left:-90px;
+    top:70px;
+    width:200px;
+    background-color:black;
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+#login_content p{
+    text-align:center;
+}
+#login_content a{
+    color: white;;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+}
+#login_content a:hover{
+    background-color:#ddd;
+}
+#login_drop:hover #login_content{
+    display:block;
+}
+#login_drop:hover{
+    background-color:black;
+}
+#signup_div{
+    display:flex;
+    width:100%;
+    height:200%;
+    background-color:rgb(77,77,77);
+    flex-direction:column;
+    align-items: center;
+}
+#signup_div form{
+    margin-top:20px;
+    width:500px;
+    height:700px;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    font-size:16px;
+    color:white;
+    background-color:rgb(36,35,35);
+    box-shadow:5px 5px 5px black;
+}
+#signup_div #signup_head{
+    margin:15px 0 10px 0;
+    font-size:25px;
+}
+#signup_div #signup_subhead{
+    margin:10px 0 15px 0;
+    font-size:16px;
+    font-weight:lighter;
+}
+#signup_div input{
+    margin:5px 20px 10px 20px;
+    height:30px;
+}
+#signup_div #gender input{
+    margin:5px 5px 10px 5px;
+}
+#signup_div #address{
+    height:100px;
+}
+#signup_div #signup_btn{
+    width:80px;
+    height:25px;
+    margin-left:200px;
+    margin-top:20px;
+    background-color:rgba(73, 102, 114, 0.5);
+    border:none;
+}
+#signup_div #signup_btn:hover{
+    background-color:rgb(141, 141, 155);
+}
+#signup_div .error{
+    color:rgba(255, 0, 0, 0.63);
+    margin-left:100px;
+}

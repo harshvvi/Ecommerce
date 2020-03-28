@@ -1,0 +1,79 @@
+body,*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color:rgb(36,35,35);
+    color:white;
+}
+#login_form{
+    width:500px;
+    display:flex;
+    flex-direction:column;
+}
+#form_field{
+    width:500px;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    box-shadow:10px 10px 10px black;
+}
+.legend{
+    text-align: center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:serif;
+    border:none;
+}
+#email_div{
+    padding:10px;
+    margin: 40px 0 20px 0;
+    font-size:17px;
+    font-family:sans-serif;
+    font-weight:400;
+}
+#pass_div{
+    padding:10px;
+    margin:10px 0 20px 0;
+    font-size:17px;
+    font-family:sans-serif;
+    font-weight:400;
+}
+#email_label{
+    margin-left:130px;
+}
+#pass_label{
+    margin-left:100px;
+}
+#email{
+    margin-left:25px;
+    border:none;
+    height:25px;
+}
+#pass{
+    margin-left:20px;
+    border:none;
+    height:25px;
+}
+#login{
+    width:70px;
+    font-size:15px;
+    height:25px;
+    padding:5px;
+    margin-left:200px;
+    margin-top:30px;
+    border:none;
+    background-color:rgb(140, 149, 187);
+}
+#login:hover{
+    background-color:rgba(140, 149, 187, 0.61);
+    box-shadow:5px 5px 5px gray;
+}
+
